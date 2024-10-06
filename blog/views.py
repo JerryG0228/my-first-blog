@@ -2,6 +2,13 @@ from django.utils import timezone
 from .models import Post
 from django.shortcuts import render, get_object_or_404, redirect
 from .forms import Postform
+from rest_framework import viewsets
+from .serializers import PostSerializer
+
+
+class blogImage(viewsets.ModelViewSet):
+    queryset = Post.objects.all()
+    serializer_class = PostSerializer
 
 
 def post_list(request):
