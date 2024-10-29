@@ -38,14 +38,24 @@ def save_image_data(image_data, filename):
 
 def handle_client(client_socket):
     try:
-        # 클라이언트로부터 데이터 수신
-        data = client_socket.recv(1024 * 1024)  # 최대 1MB 수신
+        # 모든 데이터를 받을 때까지 반복
+        data = b""
+        while True:
+            packet = client_socket.recv(1024 * 1024)  # 최대 1MB 수신
+            if not packet:  # 더 이상 수신할 데이터가 없으면 루프 종료
+                break
+            data += packet  # 받은 패킷을 기존 데이터에 추가
+
         if not data:
             print('No data received')
             return
 
         # 이진 데이터를 파일로 저장
         save_request_data(data)
+
+        # 간단한 HTTP 200 응답 전송
+        http_response = b"HTTP/1.1 200 OK\r\nContent-Type: text/plain\r\n\r\nHello, Client!"
+        client_socket.sendall(http_response)
 
         # 간단한 멀티파트 파싱
         parts = data.split(b'\r\n')
