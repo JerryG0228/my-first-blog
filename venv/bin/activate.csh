@@ -11,6 +11,7 @@ deactivate nondestructive
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/Users/zoo/Desktop/mobileWebService/PhotoBlogServer/venv"
 =======
 setenv VIRTUAL_ENV "/Users/zoo/Desktop/공통평가1/PhotoBlogServer/venv"
@@ -18,6 +19,9 @@ setenv VIRTUAL_ENV "/Users/zoo/Desktop/공통평가1/PhotoB
 =======
 setenv VIRTUAL_ENV "/Users/zoo/Desktop/my-first-blog/venv"
 >>>>>>> parent of 65c71d0 (photoblogserver)
+=======
+setenv VIRTUAL_ENV "/Users/zoo/Desktop/my-first-blog/venv"
+>>>>>>> parent of 7e4ed73 (yolo5)
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"

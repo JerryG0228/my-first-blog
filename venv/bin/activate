@@ -41,6 +41,7 @@ if [ "${OSTYPE:-}" = "cygwin" ] || [ "${OSTYPE:-}" = "msys" ] ; then
     # and to /cygdrive/d/path/to/venv on Cygwin
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     export VIRTUAL_ENV=$(cygpath "/Users/zoo/Desktop/mobileWebService/PhotoBlogServer/venv")
 else
     # use the path as-is
@@ -57,6 +58,12 @@ else
     # use the path as-is
     export VIRTUAL_ENV="/Users/zoo/Desktop/my-first-blog/venv"
 >>>>>>> parent of 65c71d0 (photoblogserver)
+=======
+    export VIRTUAL_ENV=$(cygpath "/Users/zoo/Desktop/my-first-blog/venv")
+else
+    # use the path as-is
+    export VIRTUAL_ENV="/Users/zoo/Desktop/my-first-blog/venv"
+>>>>>>> parent of 7e4ed73 (yolo5)
 fi
 
 _OLD_VIRTUAL_PATH="$PATH"

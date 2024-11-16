@@ -35,6 +35,7 @@ deactivate nondestructive
 
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 set -gx VIRTUAL_ENV "/Users/zoo/Desktop/mobileWebService/PhotoBlogServer/venv"
 =======
 set -gx VIRTUAL_ENV "/Users/zoo/Desktop/공통평가1/PhotoBlogServer/venv"
@@ -42,6 +43,9 @@ set -gx VIRTUAL_ENV "/Users/zoo/Desktop/공통평가1/Photo
 =======
 set -gx VIRTUAL_ENV "/Users/zoo/Desktop/my-first-blog/venv"
 >>>>>>> parent of 65c71d0 (photoblogserver)
+=======
+set -gx VIRTUAL_ENV "/Users/zoo/Desktop/my-first-blog/venv"
+>>>>>>> parent of 7e4ed73 (yolo5)
 
 set -gx _OLD_VIRTUAL_PATH $PATH
 set -gx PATH "$VIRTUAL_ENV/bin" $PATH
