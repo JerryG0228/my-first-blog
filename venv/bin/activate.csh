@@ -9,7 +9,11 @@ alias deactivate 'test $?_OLD_VIRTUAL_PATH != 0 && setenv PATH "$_OLD_VIRTUAL_PA
 # Unset irrelevant variables.
 deactivate nondestructive
 
+<<<<<<< HEAD
 setenv VIRTUAL_ENV "/Users/zoo/Desktop/mobileWebService/PhotoBlogServer/venv"
+=======
+setenv VIRTUAL_ENV "/Users/zoo/Desktop/공통평가1/PhotoBlogServer/venv"
+>>>>>>> 7e4ed73a2dba3b85e36e612321f6b222eea38541
 
 set _OLD_VIRTUAL_PATH="$PATH"
 setenv PATH "$VIRTUAL_ENV/bin:$PATH"
